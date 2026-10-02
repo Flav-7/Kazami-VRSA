@@ -53,8 +53,8 @@
     window.addEventListener('load', res, { once: true });
   }));
 
-  // corte mais lento: cada ciclo ~1,44s → ~1,9s
-  const SPEED = 0.75;
+  // velocidade do corte (1 = original, ciclo ~1,6s)
+  const SPEED = 1.2;
   video.playbackRate = SPEED;
   video.addEventListener('loadedmetadata', () => { video.playbackRate = SPEED; });
   video.addEventListener('play', () => { video.playbackRate = SPEED; });
