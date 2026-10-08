@@ -206,3 +206,9 @@ body.is-loading { overflow: hidden; }
     animation-duration: .01s; animation-delay: 0s;
   }
 }
+/* TELEMÓVEL: a página nunca fica mais larga que o ecrã */
+@media (max-width: 899px) {
+  html, body { overflow-x: clip; max-width: 100%; }
+  .loc .loc__map { left: auto; top: auto; }
+}
+
